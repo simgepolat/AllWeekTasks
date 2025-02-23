@@ -1,0 +1,139 @@
+ * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #1a1a1a;
+}
+
+.card-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.chip {
+    width: 250px;
+    filter: brightness(0.8);
+}
+
+.brand {
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #ccc;
+}
+
+.card-number {
+    font-size: 20px;
+    letter-spacing: 2px;
+    text-align: center;
+    margin-top: 20px;
+    margin-right: 100px;
+    font-weight: bold;
+}
+
+.card-details {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    width: 270px;
+}
+
+.card-holder p, .expiry p {
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 5px;
+    color: #ccc;
+} 
+
+.card-container {
+    width: 350px;
+    height: 200px;
+    perspective: 1000px;
+}
+
+.card-container:hover .card {
+    transform: rotateY(180deg);
+}
+
+.card {
+    transform-style: preserve-3d;
+    transition: transform 0.3s ease-in-out;
+}
+
+.credit-card,
+.card-back {
+    width: 350px;
+    height: 200px;
+    position: absolute;
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0px 4px 15px rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.credit-card:hover {
+    transform: scale(1.05);
+}
+
+.credit-card {
+    background: linear-gradient(135deg, #000000, #333333);
+    color: white;
+}
+
+.card-back {
+    background: linear-gradient(135deg, #000000, #333333);
+    color: white;
+    transform: rotateY(180deg);
+}
+
+.info1,
+.info2 {
+    font-size: 10px;  
+    width: 97%;
+}
+
+.magnetic-stripe {
+    width: 100%; 
+    background: linear-gradient(135deg, #000000, #1a1919); 
+    height: 45px; 
+    display: flex; 
+    position: absolute; 
+    margin-top: 20px;
+}
+
+.info2 {
+    margin-top: 90px;
+}
+
+.signature-panel {
+    width: 90%; 
+    background: linear-gradient(135deg, #ece5e5, #ffffff); 
+    height: 25px; 
+    display: flex; 
+    position: absolute; 
+    margin-top: 75px;
+}
+
+.cvv {
+    width: 100%; 
+    text-align: right; 
+    color: #000; 
+    font-size: 16px; 
+    margin-top: 5px;
+}
