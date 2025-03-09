@@ -1,0 +1,29 @@
+{
+    "products": [
+        {
+            "name": "iPhone 16 Pro 128 GB",
+            "price": "999.99 TL",
+            "link": "https://example.com/iphone"
+        },
+        {
+            "name": "MacBook Pro M3",
+            "price": "12999.99 TL",
+            "link": "https://example.com/macbook"
+        },
+        {
+            "name": "iPad Pro 12.9",
+            "price": "3999.99 TL",
+            "link": "https://example.com/ipad"
+        },
+        {
+            "name": "Apple Watch Series 9",
+            "price": "1999.99 TL",
+            "link": "https://example.com/watch"
+        },
+        {
+            "name": "AirPods Pro",
+            "price": "999.99 TL",
+            "link": "https://example.com/airpods"
+        }
+    ]
+} 

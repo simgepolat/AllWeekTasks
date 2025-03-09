@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application Form</title>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <button id="showFormBtn" class="btn">Apply Now</button>
+
+        <div id="applicationForm" style="display: none;">
+            <h2>Job Application Form</h2>
+            <form id="jobForm">
+                <div class="form-group">
+                    <label for="firstName">Name:</label>
+                    <input type="text" id="firstName" name="firstName" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="lastName">Last Name:</label>
+                    <input type="text" id="lastName" name="lastName" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="position">Position:</label>
+                    <select id="position" name="position" required>
+                        <option value="">Select option</option>
+                        <option value="developer">Software Developer</option>
+                        <option value="designer">UI/UX Designer</option>
+                        <option value="manager">Project Manager</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="startDate">Start Date:</label>
+                    <input type="text" id="startDate" name="startDate" required>
+                </div>
+
+                <button type="submit" class="btn submit-btn">Send</button>
+                <button type="button" class="btn close-btn" id="closeFormBtn">Close</button>
+            </form>
+        </div>
+
+        <div id="successMessage" class="success-message" style="display: none;">
+            Your application was successfully submitted!
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 
